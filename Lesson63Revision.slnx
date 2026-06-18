@@ -5,4 +5,5 @@
   </Configurations>
   <Project Path="Task01/Task01.vcxproj" />
   <Project Path="Task02/Task02.vcxproj" />
+  <Project Path="Task03/Task03.vcxproj" />
 </Solution>
