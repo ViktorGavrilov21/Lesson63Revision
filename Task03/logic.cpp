@@ -1,6 +1,10 @@
 #include "logic.h"
 
 string find_number_of_local_min_max(int* array, int size) {
+	if (size <= 0) {
+		return "Error";
+	}
+
 	int count_min = 0;
 	int count_max = 0;
 

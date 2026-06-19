@@ -21,6 +21,10 @@ int find_min_num(int* array, int size) {
 }
 
 double arithmetic_mean(int* array, int size) {
+	if (size <= 0) {
+		return -1.0;
+	}
+
 	double sum = 0;
 	int size2 = size;
 	int min = find_min_num(array, size);
