@@ -13,6 +13,8 @@ int main() {
 	print("Array: " + convert(array, size) + "\n");
 	print(find_number_of_local_min_max(array, size));
 
+	delete[] array;
+
 
 	return 0;
 }
