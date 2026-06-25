@@ -1,39 +1,27 @@
 #include "logic.h"
 
 int find_max_num_index(int* array, int size) {
-	int max = *array;
+	int max = 0;
 
 	for (int i = 0; i < size; i++) {
-		if (max < *(array + i)) {
-			max = *(array + i);
-		}
-	}
-
-	for (int i = 0; i < size; i++) {
-		if (*(array + i) == max) {
+		if (*(array + max) < *(array + i)) {
 			max = i;
-			break;
 		}
 	}
+
 
 	return max;
 }
 
 int find_min_num_index(int* array, int size) {
-	int min = *array;
+	int min = 0;
 
 	for (int i = 0; i < size; i++) {
-		if (min > *(array + i)) {
-			min = *(array + i);
-		}
-	}
-
-	for (int i = 0; i < size; i++) {
-		if (*(array + i) == min) {
+		if (*(array + min) > *(array + i)) {
 			min = i;
-			break;
 		}
 	}
+
 
 	return min;
 }
